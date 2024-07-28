@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  //   let url="https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent";
+  //  fetch(url)
+  //  .then((res)=>{
+  //  res.json();
+  //  })
+  //  .then((data)=>{
+  //   console.log(data);
+  //  })
+  //  .catch((err)=>{
+  //   console.log('err');
+  //  })
+  // let url = "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent";
+
+// fetch(url)
+//   .then((res) => {
+//     if (!res.ok) {
+//       throw new Error('Network response was not ok ' + res.statusText);
+//     }
+//     return res.json();
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((err) => {
+//     console.error('Fetch error:', err);
+//   });#
+const url = "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent";
+const apiKey = "YOUR_API_KEY"; // Replace with your actual API key
+const payload = {
+  // Add the necessary payload details required by the API
+  // Example payload:
+  "prompt": "Tell me a joke.",
+  "max_tokens": 50
+};
+
+fetch(url, {
+  method: 'POST', // Use 'POST' method as typically required for generating content
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': `Bearer ${apiKey}` // Add your API key here
+  },
+  body: JSON.stringify(payload)
+})
+.then((res) => {
+  if (!res.ok) {
+    throw new Error('Network response was not ok ' + res.statusText);
+  }
+  return res.json();
+})
+.then((data) => {
+  console.log(data); // Handle the response data here
+})
+.catch((err) => {
+  console.error('Fetch error:', err);
+});
+
+
+  </script>
+</body>
+</html>

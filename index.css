@@ -1,0 +1,225 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: #fff;
+  height: 100vh;
+}
+span{
+  font-size: 16px;
+}
+.container{
+ height: 100%;
+  display: flex;
+}
+.sidebaraction{
+  background:rgb(120, 167, 154);
+  width: 350px;
+  padding: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+.removebarwith{
+  width: 80px;
+}
+.removebarwith .new{
+  display: none;
+
+}
+.removebarwith .sidnavbutton button{
+  width: 50px;
+  height: 40px;
+}
+.removebarwith .actionlist button{
+  width: 50px;
+  height: 40px;
+}
+.removebarwith .helped, .activitys, .settings{
+  display: none;
+}
+.topbaraction{
+margin: 15px;
+cursor:pointer;
+}
+.removebarwith .chathistry h2{
+  display: none;
+}
+.removebarwith .chathistry ul li{
+  display: none;
+}
+.topbaraction.menu{
+  font-size: 18px;
+  height: 30px;
+  width: 50px;
+}
+.sidnavbutton{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.chathistry{
+  min-height: 250px;
+  overflow-y: scroll;
+}
+.chathistry::-webkit-scrollbar{
+  display: none;
+}
+.chathistry h2{
+  margin:15px 0px;
+  font-size: 18px;
+  font-weight: 400px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.chathistry ul{
+  list-style-type: none;
+}
+.chathistry li{
+height: 40px;
+border-radius: 10px;
+width:230px;
+white-space: nowrap;
+display:inline-block;
+font-size: 16px;
+align-items: center;
+margin: 5px;
+padding: 10px;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.chathistry li:hover{
+  background: #fff;
+}
+.sidnavbutton button{
+  height: 40px;
+  width: 140px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.actionlist{
+  position: fixed;
+  bottom: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.actionlist button{
+  height: 40px;
+  width: 140px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin: 2px;
+}
+/* .actionlist button :hover{
+  background-color: gray;
+} */
+.charwindow{
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+.startcontent{
+  min-width:830px;
+ 
+  
+}
+/* .startcontent h1{
+  font-size:30px;
+  line-height: 4rem;
+  font-weight: 500;
+  margin-top: 18px;
+  letter-spacing: normal;
+  letter-spacing: -0.03em;
+
+} */
+.brandvalue{
+  background: linear-gradient(
+    red,blue
+  );
+
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 40px;
+  font-weight: 400;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+.brand{
+  font-size: 50px;
+
+}
+.startcontent ul{
+  display: flex;
+}
+.startcontent ul li{
+  list-style-type: none;
+  width: 220px;
+  height: 80px;
+  margin: 10px;
+  padding: 10px;
+border-radius: 10px;
+  background-color: rgb(239, 221, 221);
+  cursor: pointer;
+}
+.startcontent ul li:hover{
+  background-color: gray;
+}
+.charwindow.chatcontent{
+  width: 900px;
+  height: 650px;
+  overflow-y: scroll;
+}
+.charwindow.chatcontent::-webkit-scrollbar{
+  display: none;
+}
+.inputare{
+  position: fixed;
+  bottom:30px;
+  padding: 4px 8px;
+  display: flex;
+  border-radius: 50px;
+  margin: 30px 0px;
+ 
+ 
+
+}
+.provacy{
+  position: fixed;
+  bottom:5px;
+  padding: 4px 8px;
+  display: flex;
+  border-radius: 50px;
+
+}
+.inputare input{
+  width: 800px;
+  height: 50px;
+  border: none;
+
+  outline: none;
+padding: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.inputare .incon{
+  display: flex;
+}
+/* .inputare .incon span{
+  font-size: 20px;
+  cursor: pointer;
+  padding: 15px;
+} */
+.send{
+  display: none;
+cursor: pointer;
+ }
